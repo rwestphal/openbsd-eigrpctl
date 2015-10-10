@@ -97,6 +97,9 @@ main(int argc, char *argv[])
 	if (connect(ctl_sock, (struct sockaddr *)&sun, sizeof(sun)) == -1)
 		err(1, "connect: %s", EIGRPD_SOCKET);
 
+	if (pledge("stdio route", NULL) == -1)
+		err(1, "tame");
+
 	if ((ibuf = malloc(sizeof(struct imsgbuf))) == NULL)
 		err(1, NULL);
 	imsg_init(ibuf, ctl_sock);
