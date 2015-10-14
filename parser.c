@@ -133,8 +133,8 @@ static const struct token t_show_topology[] = {
 	{KEYWORD,	"family",	NONE,		t_show_topology_af},
 	{KEYWORD,	"as",		NONE,		t_show_topology_as},
 	{PREFIX,	"",		NONE,		NULL},
-	{FLAG,		"active",	F_CTL_ACTIVE,	NONE},
-	{FLAG,		"all-links",	F_CTL_ALLLINKS,	NONE},
+	{FLAG,		"active",	F_CTL_ACTIVE,	NULL},
+	{FLAG,		"all-links",	F_CTL_ALLLINKS,	NULL},
 	{ENDTOKEN,	"",		NONE,		NULL}
 };
 
