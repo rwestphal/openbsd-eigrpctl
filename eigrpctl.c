@@ -607,10 +607,8 @@ show_topology_detail_msg(struct imsg *imsg, struct parse_result *res)
 		}
 
 		printf("\n");
-		if (dstnet)
-			free(dstnet);
-		if (state)
-			free(state);
+		free(dstnet);
+		free(state);
 		free(type);
 		free(nexthop);
 		break;
