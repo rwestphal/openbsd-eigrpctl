@@ -39,6 +39,7 @@ enum actions {
 	SHOW_TOPOLOGY,
 	SHOW_FIB,
 	SHOW_FIB_IFACE,
+	SHOW_STATS,
 	RELOAD
 };
 

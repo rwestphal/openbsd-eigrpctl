@@ -125,6 +125,16 @@ Show only active entries.
 .It Cm all-links
 Show all entries.
 .El
+.It Xo
+.Cm show traffic
+.Op Cm family Ar family
+.Op Cm as Ar as
+.Xc
+Show traffic statistics.
+.Ar family
+and
+.Ar as ,
+if given, limit the output to the given address family and/or autonomous system.
 .El
 .Sh FILES
 .Bl -tag -width "/var/run/eigrpd.sockXX" -compact
