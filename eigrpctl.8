@@ -38,6 +38,19 @@ for
 .Pp
 The following commands are available:
 .Bl -tag -width Ds
+.It Xo
+.Cm clear neighbors
+.Op Cm family Ar family
+.Op Cm as Ar as
+.Op Ar address
+.Xc
+Delete entries from the neighbor table.
+.Ar family ,
+.Ar as ,
+and
+.Ar address
+can be used to limit the scope of the command to the given address family, autonomous system and/or address.
+If no argument is given, all neighbors from all EIGRP instances will be deleted.
 .It Cm fib couple
 Insert the learned routes into the Forwarding Information Base
 a.k.a. the kernel routing table.
